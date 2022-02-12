@@ -1,4 +1,4 @@
 """
     This function takes in three parameters: 
     
-    "embedd
+    "embeddings" which is an instance of 
