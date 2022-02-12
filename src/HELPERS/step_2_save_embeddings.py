@@ -1,2 +1,4 @@
 """
-    This function takes in three p
+    This function takes in three parameters: 
+    
+    "embedd
