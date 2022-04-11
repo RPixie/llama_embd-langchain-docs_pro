@@ -6,4 +6,4 @@
     "directory_path" which is a string representing the path to the directory where the file will be saved.
 
     The function first creates a directory at the specified path if it does not already exist. 
-    It then creates a file path by joining the directory path and file 
+    It then creates a file path by joining the directory path and file name with a ".pkl" extension. 
