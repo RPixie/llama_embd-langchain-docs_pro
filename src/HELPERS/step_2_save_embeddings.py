@@ -7,3 +7,4 @@
 
     The function first creates a directory at the specified path if it does not already exist. 
     It then creates a file path by joining the directory path and file name with a ".pkl" extension. 
+    Finally, it saves the embedding
