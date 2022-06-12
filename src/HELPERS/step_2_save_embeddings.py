@@ -17,4 +17,5 @@ import os
 from langchain.embeddings.base import Embeddings
 
 
-def s
+def save_embeddings(
+    embeddings: Embed
