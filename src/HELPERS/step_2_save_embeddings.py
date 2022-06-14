@@ -18,4 +18,4 @@ from langchain.embeddings.base import Embeddings
 
 
 def save_embeddings(
-    embeddings: Embed
+    embeddings: Embeddings, file_name: str, directory_path:
