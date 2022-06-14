@@ -18,4 +18,7 @@ from langchain.embeddings.base import Embeddings
 
 
 def save_embeddings(
-    embeddings: Embeddings, file_name: str, directory_path:
+    embeddings: Embeddings, file_name: str, directory_path: str
+) -> None:
+    """
+  
