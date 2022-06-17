@@ -21,4 +21,7 @@ def save_embeddings(
     embeddings: Embeddings, file_name: str, directory_path: str
 ) -> None:
     """
-    Save embeddings to a binary file with the specified file name and director
+    Save embeddings to a binary file with the specified file name and directory path.
+
+    Args:
+        
