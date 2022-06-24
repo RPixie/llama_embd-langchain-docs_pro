@@ -24,4 +24,5 @@ def save_embeddings(
     Save embeddings to a binary file with the specified file name and directory path.
 
     Args:
-        - embeddings (Embeddings): The embedd
+        - embeddings (Embeddings): The embeddings to be saved.
+        - fil
