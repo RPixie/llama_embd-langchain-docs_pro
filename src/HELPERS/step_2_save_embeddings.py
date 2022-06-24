@@ -25,4 +25,4 @@ def save_embeddings(
 
     Args:
         - embeddings (Embeddings): The embeddings to be saved.
-        - fil
+        - file_name (str): The name of th
