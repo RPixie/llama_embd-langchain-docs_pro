@@ -32,4 +32,4 @@ def save_embeddings(
         - None
     """
 
-    directory = os.path.join
+    directory = os.path.join(os.getcwd(), directory_pa
