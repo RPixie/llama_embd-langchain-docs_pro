@@ -34,4 +34,5 @@ def save_embeddings(
 
     directory = os.path.join(os.getcwd(), directory_path)
     if not os.path.exists(directory):
-        
+        os.makedirs(directory)
+    f
