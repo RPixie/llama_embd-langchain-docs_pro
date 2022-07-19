@@ -39,4 +39,4 @@ def save_embeddings(
 
     # Save embeddings to binary file
     with open(file_path, "wb") as f:
-        pickle.dump(embedd
+        pickle.dump(embeddings, f)
