@@ -37,4 +37,5 @@ def save_embeddings(
         os.makedirs(directory)
     file_path = os.path.join(directory, file_name + ".pkl")
 
-    # Save embeddings to bina
+    # Save embeddings to binary file
+    with open(file_path, "wb
