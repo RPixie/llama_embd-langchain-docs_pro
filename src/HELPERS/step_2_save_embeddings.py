@@ -38,4 +38,5 @@ def save_embeddings(
     file_path = os.path.join(directory, file_name + ".pkl")
 
     # Save embeddings to binary file
-    with open(file_path, "wb
+    with open(file_path, "wb") as f:
+        pickle.dump(embedd
