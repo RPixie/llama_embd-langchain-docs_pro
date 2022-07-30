@@ -4,3 +4,5 @@
     The function takes one argument: 
         file_path which is the path to the file containing the embeddings. 
     
+    The function: 
+        opens 
