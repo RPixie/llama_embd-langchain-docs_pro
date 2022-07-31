@@ -5,4 +5,4 @@
         file_path which is the path to the file containing the embeddings. 
     
     The function: 
-        opens 
+        opens the file in binary mode, 
