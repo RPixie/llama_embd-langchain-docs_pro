@@ -6,4 +6,5 @@
     
     The function: 
         opens the file in binary mode, 
-        loads the embedd
+        loads the embeddings using pickle.load(), and 
+   
