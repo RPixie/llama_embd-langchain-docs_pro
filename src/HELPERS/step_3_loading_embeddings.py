@@ -14,4 +14,4 @@ import pickle
 from langchain.embeddings.base import Embeddings
 
 
-def l
+def load_embeddings(file_path
