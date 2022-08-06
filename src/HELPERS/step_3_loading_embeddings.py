@@ -11,4 +11,7 @@
 """
 
 import pickle
-from langchain.embeddings.b
+from langchain.embeddings.base import Embeddings
+
+
+def l
