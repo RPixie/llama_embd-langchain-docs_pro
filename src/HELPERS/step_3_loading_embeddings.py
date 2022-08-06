@@ -7,4 +7,8 @@
     The function: 
         opens the file in binary mode, 
         loads the embeddings using pickle.load(), and 
-        returns the embed
+        returns the embeddings.
+"""
+
+import pickle
+from 
