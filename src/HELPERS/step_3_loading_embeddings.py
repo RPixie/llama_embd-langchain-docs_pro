@@ -15,4 +15,5 @@ from langchain.embeddings.base import Embeddings
 
 
 def load_embeddings(file_path: str) -> Embeddings:
-    
+    """
+    Loads embeddings from 
