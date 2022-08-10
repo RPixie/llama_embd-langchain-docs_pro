@@ -16,4 +16,7 @@ from langchain.embeddings.base import Embeddings
 
 def load_embeddings(file_path: str) -> Embeddings:
     """
-    Loads embeddings from the specified file pat
+    Loads embeddings from the specified file path using pickle.
+
+    Args:
+   
