@@ -19,4 +19,4 @@ def load_embeddings(file_path: str) -> Embeddings:
     Loads embeddings from the specified file path using pickle.
 
     Args:
-   
+        - file_path (st
