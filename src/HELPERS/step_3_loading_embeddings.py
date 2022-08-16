@@ -22,4 +22,5 @@ def load_embeddings(file_path: str) -> Embeddings:
         - file_path (str): Path to file containing embeddings.
 
     Returns:
-        - Embeddings: L
+        - Embeddings: Loaded embeddings.
+    "
