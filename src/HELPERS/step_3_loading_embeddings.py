@@ -26,4 +26,4 @@ def load_embeddings(file_path: str) -> Embeddings:
     """
 
     with open(file_path, "rb") as f:
-        embeddings:
+        embeddings: Embeddings = pickle.load(
