@@ -23,4 +23,6 @@ def load_embeddings(file_path: str) -> Embeddings:
 
     Returns:
         - Embeddings: Loaded embeddings.
-    "
+    """
+
+    with open(file_path,
