@@ -3,4 +3,5 @@
 
     It imports the os module and the FAISS class from the langchain.vectorstores.faiss module. 
 
-    The function t
+    The function takes three arguments: 
+        v
