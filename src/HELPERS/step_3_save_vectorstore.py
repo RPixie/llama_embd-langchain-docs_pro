@@ -5,4 +5,4 @@
 
     The function takes three arguments: 
         vectorstore which is the FAISS index to be saved, 
-        directory_path which
+        directory_path which is the path to the directory 
