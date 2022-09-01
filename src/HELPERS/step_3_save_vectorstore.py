@@ -4,4 +4,4 @@
     It imports the os module and the FAISS class from the langchain.vectorstores.faiss module. 
 
     The function takes three arguments: 
-        v
+        vectorstore which is the FAIS
