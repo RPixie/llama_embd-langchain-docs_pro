@@ -6,4 +6,4 @@
     The function takes three arguments: 
         vectorstore which is the FAISS index to be saved, 
         directory_path which is the path to the directory where the file will be saved, and 
-        fi
+        file_name which is the 
