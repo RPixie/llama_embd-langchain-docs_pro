@@ -9,4 +9,4 @@
         file_name which is the name of the file to be saved. 
         
     The function:
-        creat
+        creates the directory if it d
