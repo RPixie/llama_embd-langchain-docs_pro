@@ -10,4 +10,5 @@
         
     The function:
         creates the directory if it doesn't exist, 
-        crea
+        creates the file path, and 
+       
