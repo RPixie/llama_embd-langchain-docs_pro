@@ -9,4 +9,5 @@
         file_name which is the name of the file to be saved. 
         
     The function:
-        creates the directory if it d
+        creates the directory if it doesn't exist, 
+        crea
