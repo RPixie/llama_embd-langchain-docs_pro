@@ -11,4 +11,4 @@
     The function:
         creates the directory if it doesn't exist, 
         creates the file path, and 
-       
+        saves the FAISS index to the
