@@ -15,4 +15,7 @@
 """
 
 import os
-from langchain.vectorstores.fais
+from langchain.vectorstores.faiss import FAISS
+
+
+def save_vectorstore(
