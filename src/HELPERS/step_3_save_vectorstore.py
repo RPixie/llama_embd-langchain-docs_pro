@@ -18,4 +18,4 @@ import os
 from langchain.vectorstores.faiss import FAISS
 
 
-def save_vectorstore(
+def save_vectorstore(vectorstore: FAISS, directory_pa
