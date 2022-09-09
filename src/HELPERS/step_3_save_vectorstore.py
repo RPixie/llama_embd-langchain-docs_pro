@@ -20,4 +20,4 @@ from langchain.vectorstores.faiss import FAISS
 
 def save_vectorstore(vectorstore: FAISS, directory_path: str, file_name: str) -> None:
     """
-    Saves a FAISS index as a file at the specified direc
+    Saves a FAISS index as a file at the specified directory path and file name.
