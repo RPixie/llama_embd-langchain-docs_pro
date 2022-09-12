@@ -24,4 +24,4 @@ def save_vectorstore(vectorstore: FAISS, directory_path: str, file_name: str) ->
 
     Args:
         - vectorstore (FAISS): FAISS index to be saved.
-        - directory_
+        - directory_path (str): Path to dire
