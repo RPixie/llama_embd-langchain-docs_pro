@@ -33,4 +33,5 @@ def save_vectorstore(vectorstore: FAISS, directory_path: str, file_name: str) ->
 
     directory = os.path.join(os.getcwd(), directory_path)
     if not os.path.exists(directory):
-        os.maked
+        os.makedirs(directory)
+    file_path = o
