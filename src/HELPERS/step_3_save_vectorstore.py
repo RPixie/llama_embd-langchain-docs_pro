@@ -36,4 +36,4 @@ def save_vectorstore(vectorstore: FAISS, directory_path: str, file_name: str) ->
         os.makedirs(directory)
     file_path = os.path.join(directory, file_name + ".faiss")
 
-  
+    vectorstore.save_local(file_path)
