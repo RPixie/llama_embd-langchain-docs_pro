@@ -21,3 +21,21 @@ from langchain.text_splitter import CharacterTextSplitter
 from typing import List, Dict, Union
 
 # Add src directory to Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from HELPERS.step_1_save_chunked_docs import save_documents
+
+
+def load_documents(
+    docs_directory_path: str,
+) -> List[Dict[str, Union[str, List[Dict[str, str]]]]]:
+    """
+    Load documents from a directory and split them into smaller chunks.
+
+    Args:
+        docs_directory_path (str): Path to directory containing documents.
+
+    Returns:
+        List[Dict[str, Union[str, List[Dict[str, str]]]]]: A list of dictionaries containing the name and chunked data of each document in the directory. Each dictionary has the following keys:
+            - 'name': The name of the document file.
+            - 'chunks': A list of dictionaries containing the chunked data of the document. Each dictionary has a key in the format 'chunk_i' (where i is the chunk number) and a value that is the text content of the chunk.
+    """
