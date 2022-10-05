@@ -90,3 +90,14 @@ print("\n####################### DOCUMENTS LOADED ########################\n")
 
 
 print("\n####################### DOCUMENT CHUNKS LOADED ########################\n")
+
+save_json_chunks_directory = os.getenv("DIRECTORY_FOR_DOCUMENTS_JSON_CHUNKS")
+
+# Save documents
+save_documents(
+    documents=loaded_and_chunked_docs,
+    save_json_chunks_directory=save_json_chunks_directory,
+)
+
+
+print("\n####################### DOCUMENT CHUNKS SAVED ########################\n")
