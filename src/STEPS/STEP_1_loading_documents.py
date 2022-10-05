@@ -39,3 +39,29 @@ def load_documents(
             - 'name': The name of the document file.
             - 'chunks': A list of dictionaries containing the chunked data of the document. Each dictionary has a key in the format 'chunk_i' (where i is the chunk number) and a value that is the text content of the chunk.
     """
+
+    result = []
+
+    # Iterate through all the files in the directory
+    for file_name in os.listdir(docs_directory_path):
+        file_path = os.path.join(docs_directory_path, file_name)
+
+        # Determine loader based on file type
+        if file_name.endswith(".pdf"):
+            loader = PyPDFLoader(file_path=file_path)
+        else:
+            loader = UnstructuredFileLoader(file_path=file_path)
+
+        # Load document
+        document = loader.load()
+
+        # Split document into smaller chunks
+        text_splitter = CharacterTextSplitter(
+            separator=" ",
+            chunk_size=100,
+            chunk_overlap=50,
+            length_function=len,
+        )
+
+        chunks = [
+            {"chunk_" + str(i + 1): chunk.page_content}
