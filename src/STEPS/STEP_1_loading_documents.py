@@ -65,3 +65,28 @@ def load_documents(
 
         chunks = [
             {"chunk_" + str(i + 1): chunk.page_content}
+            for i, chunk in enumerate(text_splitter.split_documents(documents=document))
+        ]
+
+        # Add document name and chunked data to result list
+        file_name = os.path.splitext(file_name)[0]
+        result.append({"name": file_name, "chunks": chunks})
+
+    return result
+
+
+"""################# CALLING THE FUNCTION #################"""
+
+print("\n####################### LOADING DOCUMENTS ########################\n")
+
+load_dotenv()  # Load environment variables from .env file
+
+docs_directory_path = os.getenv("DIRECTORY_DOCUMENTS_TO_LOAD")
+
+# Load documents
+loaded_and_chunked_docs = load_documents(docs_directory_path=docs_directory_path)
+
+print("\n####################### DOCUMENTS LOADED ########################\n")
+
+
+print("\n####################### DOCUMENT CHUNKS LOADED ########################\n")
