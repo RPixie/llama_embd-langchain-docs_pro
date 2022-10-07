@@ -18,3 +18,21 @@
 """
 
 import os
+import sys
+import json
+from typing import List
+
+from langchain.embeddings.base import Embeddings
+from langchain.embeddings import LlamaCppEmbeddings
+from dotenv import load_dotenv
+
+# Add src directory to Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from HELPERS.step_2_save_embeddings import save_embeddings
+
+
+def create_embeddings(
+    load_json_chunks_directory: str, path_to_ggml_model: str
+) -> List[Embeddings]:
+    """
+    Creates embeddings for text documents using the LlamaCppEmbeddings model.
