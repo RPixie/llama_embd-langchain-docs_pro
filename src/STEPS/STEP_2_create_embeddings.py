@@ -70,3 +70,25 @@ def create_embeddings(
 
 
 """################# CALLING THE FUNCTION #################"""
+
+load_dotenv()  # Load environment variables from .env file
+
+print("\n####################### CREATING EMBEDDINGS ########################\n")
+
+load_json_chunks_directory = os.getenv("DIRECTORY_FOR_DOCUMENTS_JSON_CHUNKS")
+path_to_ggml_model: str = os.getenv("PATH_TO_GGML_MODEL")
+
+# Creating the embeddings
+embeddings = create_embeddings(
+    load_json_chunks_directory=load_json_chunks_directory,
+    path_to_ggml_model=path_to_ggml_model,
+)
+
+print("\n####################### EMBEDDINGS CREATED ########################\n")
+
+print("\n####################### SAVING EMBEDDINGS ########################\n")
+# Saving the embeddings with a specified filename
+saving_embeddings_file_name: str = os.getenv("SAVING_EMBEDDINGS_FILE_NAME")
+saving_embeddings_directory: str = os.getenv("SAVING_EMBEDDINGS_DIRECTORY")
+
+save_embeddings(
