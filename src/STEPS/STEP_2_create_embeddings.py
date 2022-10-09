@@ -36,3 +36,37 @@ def create_embeddings(
 ) -> List[Embeddings]:
     """
     Creates embeddings for text documents using the LlamaCppEmbeddings model.
+
+    Args:
+        - load_json_chunks_directory (str): Path to directory containing JSON files with text documents.
+        - path_to_ggml_model (str): Path to the LlamaCppEmbeddings model.
+
+    Returns:
+        - List[Embeddings]: A list of embeddings for the text documents.
+    """
+
+    # Load LlamaCppEmbeddings object
+    embeddings = LlamaCppEmbeddings(model_path=path_to_ggml_model)
+
+    # Embed text from JSON files in directory using LlamaCppEmbeddings
+    all_embeddings: list[Embeddings] = []
+
+    for filename in os.listdir(load_json_chunks_directory):
+        if filename.endswith(".json"):
+            with open(os.path.join(load_json_chunks_directory, filename), "r") as f:
+                documents = json.load(f)
+
+            # texts = [doc["chunk_x"] for doc in documents]
+            texts: list = []
+            for doc in documents:
+                for key, value in doc.items():
+                    texts.append(value)
+                    break
+
+            embeddings_list = embeddings.embed_documents(texts)
+            all_embeddings.extend(embeddings_list)
+
+    return all_embeddings
+
+
+"""################# CALLING THE FUNCTION #################"""
