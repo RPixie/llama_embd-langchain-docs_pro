@@ -92,3 +92,9 @@ saving_embeddings_file_name: str = os.getenv("SAVING_EMBEDDINGS_FILE_NAME")
 saving_embeddings_directory: str = os.getenv("SAVING_EMBEDDINGS_DIRECTORY")
 
 save_embeddings(
+    embeddings=embeddings,
+    file_name=saving_embeddings_file_name,
+    directory_path=saving_embeddings_directory,
+)
+
+print("\n####################### EMBEDDINGS SAVED ########################\n")
