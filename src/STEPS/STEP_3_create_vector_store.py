@@ -48,3 +48,36 @@ def create_vectorstore_from_json(json_files_directory: str, model_path: str) -> 
     load_embeddings_file_name: str = os.getenv("SAVING_EMBEDDINGS_FILE_NAME")
 
     embeddings_path = os.path.join(
+        load_embeddings_directory, load_embeddings_file_name + ".pkl"
+    )
+
+    loaded_embeddings = load_embeddings(file_path=embeddings_path)
+
+    texts: list = []
+    for filename in os.listdir(json_files_directory):
+        if filename.endswith(".json"):
+            with open(os.path.join(json_files_directory, filename), "r") as f:
+                chunks = json.load(f)
+
+            for chunk in chunks:
+                for key, value in chunk.items():
+                    texts.append(value)
+                    break
+
+    text_embedding = list(zip(texts, loaded_embeddings))
+    faiss = FAISS.from_embeddings(embedding=embeddings, text_embeddings=text_embedding)
+
+    return faiss
+
+
+"""################# CALLING THE FUNCTION #################"""
+
+load_dotenv()  # Load environment variables from .env file
+
+print("\n####################### CREATING VECTORSTORE ########################\n")
+
+path_to_ggml_model: str = os.getenv("PATH_TO_GGML_MODEL")
+json_files_directory = os.getenv("DIRECTORY_FOR_DOCUMENTS_JSON_CHUNKS")
+
+vectorstore = create_vectorstore_from_json(
+    json_files_directory=json_files_directory, model_path=path_to_ggml_model
