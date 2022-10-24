@@ -81,3 +81,19 @@ json_files_directory = os.getenv("DIRECTORY_FOR_DOCUMENTS_JSON_CHUNKS")
 
 vectorstore = create_vectorstore_from_json(
     json_files_directory=json_files_directory, model_path=path_to_ggml_model
+)
+
+print("\n####################### VECTORSTORE CREATED ########################\n")
+
+
+print("\n####################### SAVING VECTORSTORE ########################\n")
+
+saving_vectorstore_file_name: str = os.getenv("SAVING_VECTORSTORE_FILE_NAME")
+saving_vectorstore_directory: str = os.getenv("SAVING_VECTORSTORE_DIRECTORY")
+save_vectorstore(
+    vectorstore=vectorstore,
+    file_name=saving_vectorstore_file_name,
+    directory_path=saving_vectorstore_directory,
+)
+
+print("\n####################### VECTORSTORE SAVED ########################\n")
