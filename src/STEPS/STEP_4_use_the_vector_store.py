@@ -3,4 +3,4 @@
 
     Q_and_A_implementation: This function takes in a path to a pre-trained language model, a list of Document objects representing the most similar documents to a query, and the query string itself. It loads a pre-trained question-answering model using the load_qa_chain function from the langchain.chains.question_answering module, and applies this model to the list of Document objects and the query string to generate an answer. The function returns the answer as a string.
 
-    The code then loads environment variables from a .env file, sets up the paths to the pre-trained language model and t
+    The code then loads environment variables from a .env file, sets up the paths to the pre-trained language model and the vector store, and d
