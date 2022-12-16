@@ -10,4 +10,4 @@
 
 import os
 from typing import List
-from do
+from dotenv import load_dotenv
