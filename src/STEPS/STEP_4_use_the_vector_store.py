@@ -9,4 +9,5 @@
 
 
 import os
-from typin
+from typing import List
+from do
