@@ -12,4 +12,4 @@ import os
 from typing import List
 from dotenv import load_dotenv
 
-from langchain.embeddi
+from langchain.embeddings import LlamaCppEmbeddi
