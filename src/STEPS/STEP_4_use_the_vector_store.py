@@ -12,4 +12,5 @@ import os
 from typing import List
 from dotenv import load_dotenv
 
-from langchain.embeddings import LlamaCppEmbeddi
+from langchain.embeddings import LlamaCppEmbeddings
+from langchain import FA
