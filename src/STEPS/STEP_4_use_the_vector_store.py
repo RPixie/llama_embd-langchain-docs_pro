@@ -19,4 +19,4 @@ from langchain.chains.question_answering import load_qa_chain
 
 
 def using_vectorstore_similarity_search(
-    model_path: str, path_t
+    model_path: str, path_to_vectorstore: str, quer
