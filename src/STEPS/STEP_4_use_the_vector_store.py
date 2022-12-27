@@ -22,4 +22,4 @@ def using_vectorstore_similarity_search(
     model_path: str, path_to_vectorstore: str, query: str
 ) -> List[Document]:
     """
-    This function 
+    This function takes in a query, embeds it using 
