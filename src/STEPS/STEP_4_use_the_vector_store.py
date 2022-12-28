@@ -23,4 +23,4 @@ def using_vectorstore_similarity_search(
 ) -> List[Document]:
     """
     This function takes in a query, embeds it using LlamaCppEmbeddings, loads a FAISS vectorstore,
-    and finds 
+    and finds the most similar document
