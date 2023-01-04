@@ -27,4 +27,4 @@ def using_vectorstore_similarity_search(
 
     Args:
         model_path (str): Path to the LlamaCpp model.
-      
+        path_to_vectorstore (
