@@ -26,4 +26,5 @@ def using_vectorstore_similarity_search(
     and finds the most similar documents to the query.
 
     Args:
-        model_path (str): Path to th
+        model_path (str): Path to the LlamaCpp model.
+      
