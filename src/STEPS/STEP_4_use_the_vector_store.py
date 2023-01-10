@@ -31,4 +31,5 @@ def using_vectorstore_similarity_search(
         query (str): The query to search for.
 
     Returns:
-        List[Document]: A list of the most similar doc
+        List[Document]: A list of the most similar documents to the query.
+    """
