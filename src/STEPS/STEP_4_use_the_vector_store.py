@@ -30,4 +30,5 @@ def using_vectorstore_similarity_search(
         path_to_vectorstore (str): Path to the FAISS vectorstore.
         query (str): The query to search for.
 
-    Re
+    Returns:
+        List[Document]: A list
