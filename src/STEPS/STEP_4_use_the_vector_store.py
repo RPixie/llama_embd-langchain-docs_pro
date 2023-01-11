@@ -33,4 +33,5 @@ def using_vectorstore_similarity_search(
     Returns:
         List[Document]: A list of the most similar documents to the query.
     """
-    # Embed the query t
+    # Embed the query text
+    llama = LlamaCppEmbedd
