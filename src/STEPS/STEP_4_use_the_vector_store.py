@@ -36,4 +36,5 @@ def using_vectorstore_similarity_search(
     # Embed the query text
     llama = LlamaCppEmbeddings(model_path=model_path)
 
-    # Load the FAISS ve
+    # Load the FAISS vectorstore
+    fai
