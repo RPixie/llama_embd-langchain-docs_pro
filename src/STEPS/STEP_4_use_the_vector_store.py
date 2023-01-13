@@ -34,4 +34,6 @@ def using_vectorstore_similarity_search(
         List[Document]: A list of the most similar documents to the query.
     """
     # Embed the query text
-    llama = LlamaCppEmbeddings(model_path=model_path
+    llama = LlamaCppEmbeddings(model_path=model_path)
+
+    # Load the FAISS ve
