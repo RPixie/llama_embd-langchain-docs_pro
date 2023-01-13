@@ -37,4 +37,4 @@ def using_vectorstore_similarity_search(
     llama = LlamaCppEmbeddings(model_path=model_path)
 
     # Load the FAISS vectorstore
-    fai
+    faiss = FAISS.load_local(path_to_vector
