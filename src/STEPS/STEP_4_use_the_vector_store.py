@@ -40,3 +40,4 @@ def using_vectorstore_similarity_search(
     faiss = FAISS.load_local(path_to_vectorstore, llama)
 
     # Find the most similar documents to the query
+    answer_docs = faiss.similarity_
