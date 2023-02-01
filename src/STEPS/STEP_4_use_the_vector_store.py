@@ -42,4 +42,7 @@ def using_vectorstore_similarity_search(
     # Find the most similar documents to the query
     answer_docs = faiss.similarity_search(query, k=4)
 
-    ret
+    return answer_docs
+
+
+def Q
