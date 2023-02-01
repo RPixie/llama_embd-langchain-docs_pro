@@ -45,4 +45,5 @@ def using_vectorstore_similarity_search(
     return answer_docs
 
 
-def Q
+def Q_and_A_implementation(
+   
