@@ -46,4 +46,4 @@ def using_vectorstore_similarity_search(
 
 
 def Q_and_A_implementation(
-   
+    model_path: str, answer_docs
