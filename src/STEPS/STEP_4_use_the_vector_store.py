@@ -49,4 +49,4 @@ def Q_and_A_implementation(
     model_path: str, answer_docs: List[Document], query: str
 ) -> str:
     """
-    This function takes in a list of documents and 
+    This function takes in a list of documents and a query, and uses a question answering c
