@@ -50,4 +50,6 @@ def Q_and_A_implementation(
 ) -> str:
     """
     This function takes in a list of documents and a query, and uses a question answering chain
-    to find an answer to the
+    to find an answer to the query.
+
+    Args
