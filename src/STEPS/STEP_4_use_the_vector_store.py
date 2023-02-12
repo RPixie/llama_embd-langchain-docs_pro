@@ -52,4 +52,5 @@ def Q_and_A_implementation(
     This function takes in a list of documents and a query, and uses a question answering chain
     to find an answer to the query.
 
-    Args
+    Args:
+        model_path (str): P
