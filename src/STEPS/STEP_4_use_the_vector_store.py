@@ -53,4 +53,5 @@ def Q_and_A_implementation(
     to find an answer to the query.
 
     Args:
-        model_path (str): P
+        model_path (str): Path to the LlamaCpp model.
+     
