@@ -54,4 +54,5 @@ def Q_and_A_implementation(
 
     Args:
         model_path (str): Path to the LlamaCpp model.
-        answer_docs (List[Document]): A list of documents to search for
+        answer_docs (List[Document]): A list of documents to search for the answer.
+        query
