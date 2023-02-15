@@ -58,3 +58,4 @@ def Q_and_A_implementation(
         query (str): The query to search for.
 
     Returns:
+        str: 
