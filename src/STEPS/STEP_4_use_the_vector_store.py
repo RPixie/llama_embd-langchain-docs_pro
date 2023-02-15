@@ -58,4 +58,6 @@ def Q_and_A_implementation(
         query (str): The query to search for.
 
     Returns:
-        str: The answer to the que
+        str: The answer to the query.
+    """
+    # Load t
