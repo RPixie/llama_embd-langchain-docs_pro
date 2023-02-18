@@ -60,4 +60,5 @@ def Q_and_A_implementation(
     Returns:
         str: The answer to the query.
     """
-    # Load the question answering
+    # Load the question answering chain
+    chain = load_qa_chain(
