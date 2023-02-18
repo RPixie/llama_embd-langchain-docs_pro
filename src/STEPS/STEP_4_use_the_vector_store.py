@@ -60,4 +60,4 @@ def Q_and_A_implementation(
     Returns:
         str: The answer to the query.
     """
-    # Load t
+    # Load the question answering
