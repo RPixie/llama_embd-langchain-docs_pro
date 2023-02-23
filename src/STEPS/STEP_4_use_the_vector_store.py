@@ -63,4 +63,4 @@ def Q_and_A_implementation(
     # Load the question answering chain
     chain = load_qa_chain(LlamaCpp(model_path=model_path), chain_type="stuff")
 
-    # Use the chain t
+    # Use the chain to find the answer 
