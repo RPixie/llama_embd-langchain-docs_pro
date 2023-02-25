@@ -64,4 +64,4 @@ def Q_and_A_implementation(
     chain = load_qa_chain(LlamaCpp(model_path=model_path), chain_type="stuff")
 
     # Use the chain to find the answer to the query
-    Q_and_A_answer = chain.run(input_documen
+    Q_and_A_answer = chain.run(input_documents=answer_docs, questio
