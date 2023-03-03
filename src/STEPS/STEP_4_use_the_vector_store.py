@@ -66,4 +66,7 @@ def Q_and_A_implementation(
     # Use the chain to find the answer to the query
     Q_and_A_answer = chain.run(input_documents=answer_docs, question=query)
 
-    return Q_a
+    return Q_and_A_answer
+
+
+"""################
