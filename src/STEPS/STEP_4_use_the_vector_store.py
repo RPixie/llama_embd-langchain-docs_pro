@@ -71,4 +71,4 @@ def Q_and_A_implementation(
 
 """################# CALLING THE FUNCTION #################"""
 
-load_dot
+load_dotenv()  # Load environment variabl
