@@ -71,4 +71,6 @@ def Q_and_A_implementation(
 
 """################# CALLING THE FUNCTION #################"""
 
-load_dotenv()  # Load environment variabl
+load_dotenv()  # Load environment variables from .env file
+
+p
