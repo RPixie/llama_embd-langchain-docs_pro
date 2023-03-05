@@ -73,4 +73,4 @@ def Q_and_A_implementation(
 
 load_dotenv()  # Load environment variables from .env file
 
-p
+path_to_ggml_model: str = os.getenv("PA
