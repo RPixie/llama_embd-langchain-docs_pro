@@ -75,4 +75,4 @@ load_dotenv()  # Load environment variables from .env file
 
 path_to_ggml_model: str = os.getenv("PATH_TO_GGML_MODEL")
 
-saving_vectorstore_file_name: str
+saving_vectorstore_file_name: str = os.getenv("SAVING_VECTORSTO
