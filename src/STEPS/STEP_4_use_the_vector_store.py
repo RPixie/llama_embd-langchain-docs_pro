@@ -78,4 +78,7 @@ path_to_ggml_model: str = os.getenv("PATH_TO_GGML_MODEL")
 saving_vectorstore_file_name: str = os.getenv("SAVING_VECTORSTORE_FILE_NAME")
 saving_vectorstore_directory: str = os.getenv("SAVING_VECTORSTORE_DIRECTORY")
 vectorstore_path = os.path.join(
-    saving_vectorstore_directory, saving_vectorstore_file_name 
+    saving_vectorstore_directory, saving_vectorstore_file_name + ".faiss"
+)
+
+query = "What
