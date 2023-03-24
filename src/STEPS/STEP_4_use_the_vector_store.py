@@ -81,4 +81,6 @@ vectorstore_path = os.path.join(
     saving_vectorstore_directory, saving_vectorstore_file_name + ".faiss"
 )
 
-query = "What
+query = "What is this document about?"
+
+an
