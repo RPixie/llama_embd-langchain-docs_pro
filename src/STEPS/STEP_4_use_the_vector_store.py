@@ -83,4 +83,5 @@ vectorstore_path = os.path.join(
 
 query = "What is this document about?"
 
-answer_docs = using_vectorstore_simi
+answer_docs = using_vectorstore_similarity_search(
+    
