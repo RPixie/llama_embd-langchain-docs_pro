@@ -84,4 +84,4 @@ vectorstore_path = os.path.join(
 query = "What is this document about?"
 
 answer_docs = using_vectorstore_similarity_search(
-    
+    model_path=path_to_ggml_m
