@@ -85,3 +85,7 @@ query = "What is this document about?"
 
 answer_docs = using_vectorstore_similarity_search(
     model_path=path_to_ggml_model, path_to_vectorstore=vectorstore_path, query=query
+)
+
+
+Q_and_A_answer = Q_and_A_im
