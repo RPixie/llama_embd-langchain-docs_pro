@@ -88,4 +88,5 @@ answer_docs = using_vectorstore_similarity_search(
 )
 
 
-Q_and_A_answer = Q_and_A_im
+Q_and_A_answer = Q_and_A_implementation(
+    model_path=pa
