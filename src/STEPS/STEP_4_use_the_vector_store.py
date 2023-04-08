@@ -89,4 +89,4 @@ answer_docs = using_vectorstore_similarity_search(
 
 
 Q_and_A_answer = Q_and_A_implementation(
-    model_path=path_to_ggml_model, answer_d
+    model_path=path_to_ggml_model, answer_docs=answer_docs, quer
