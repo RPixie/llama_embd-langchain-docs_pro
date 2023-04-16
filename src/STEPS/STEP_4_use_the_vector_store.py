@@ -94,4 +94,4 @@ Q_and_A_answer = Q_and_A_implementation(
 
 
 print("\n\n############################# ANSWER #########################\n\n")
-pr
+print(Q_and_A_answer)
