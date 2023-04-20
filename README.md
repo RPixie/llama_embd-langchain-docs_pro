@@ -1,1 +1,3 @@
-# LLaMA and LangChain Documents Embed
+# LLaMA and LangChain Documents Embeddings - An Improved Approach
+
+Rep
