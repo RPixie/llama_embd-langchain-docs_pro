@@ -2,4 +2,4 @@
 
 Repository Ownership - RPixie
 
-This repository focuse
+This repository focuses on enhancing document 
