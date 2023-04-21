@@ -2,4 +2,4 @@
 
 Repository Ownership - RPixie
 
-This repository focuses on enhancing document 
+This repository focuses on enhancing document embeddings using LLaMA
