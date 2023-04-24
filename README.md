@@ -2,4 +2,4 @@
 
 Repository Ownership - RPixie
 
-This repository focuses on enhancing document embeddings using LLaMA C++ and Langchain. It provides a step-by-step guide on how to set up the environment, load and chun
+This repository focuses on enhancing document embeddings using LLaMA C++ and Langchain. It provides a step-by-step guide on how to set up the environment, load and chunk documents, create and s
