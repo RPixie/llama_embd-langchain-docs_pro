@@ -6,3 +6,6 @@ This repository focuses on enhancing document embeddings using LLaMA C++ and Lan
 
 # Setup and Preliminary Steps:
 Step 0: Rename the .example.env file to .env and modify as per requirements.
+
+# Loading and Chunking Documents:
+Step
