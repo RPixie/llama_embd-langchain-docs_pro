@@ -8,4 +8,4 @@ This repository focuses on enhancing document embeddings using LLaMA C++ and Lan
 Step 0: Rename the .example.env file to .env and modify as per requirements.
 
 # Loading and Chunking Documents:
-Step 1: The program chunk loads unstructured docume
+Step 1: The program chunk loads unstructured documents from a directory path and 
