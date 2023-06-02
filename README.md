@@ -10,4 +10,5 @@ Step 0: Rename the .example.env file to .env and modify as per requirements.
 # Loading and Chunking Documents:
 Step 1: The program chunk loads unstructured documents from a directory path and splits them into smaller, manageable chunks.
 
-# Creating and Saving Embeddin
+# Creating and Saving Embeddings:
+Step 2: Using LlamaCppEmbedd
