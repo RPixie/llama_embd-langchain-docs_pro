@@ -14,4 +14,4 @@ Step 1: The program chunk loads unstructured documents from a directory path and
 Step 2: Using LlamaCppEmbeddings model, embeddings are generated for each document chunk. The embeddings are then stored for later use.
 
 # Creating and Saving VectorStores:
-Step 3: A FAISS index is created from embeddings extracted from JSON chunks of documents. The FAISS index 
+Step 3: A FAISS index is created from embeddings extracted from JSON chunks of documents. The FAISS index or VectorStore is the
