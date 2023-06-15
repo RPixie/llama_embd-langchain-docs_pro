@@ -16,4 +16,5 @@ Step 2: Using LlamaCppEmbeddings model, embeddings are generated for each docume
 # Creating and Saving VectorStores:
 Step 3: A FAISS index is created from embeddings extracted from JSON chunks of documents. The FAISS index or VectorStore is then saved for future queries.
 
-# Using VectorStore to Qu
+# Using VectorStore to Query Documents:
+Step 4: T
