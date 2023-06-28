@@ -19,4 +19,4 @@ Step 3: A FAISS index is created from embeddings extracted from JSON chunks of d
 # Using VectorStore to Query Documents:
 Step 4: The VectorStore created is now used to find similar documents to a given query. A Question and Answer model is then applied to the query's similar documents to generate an answer.
 
-Please re
+Please refer to the in-depth instructi
